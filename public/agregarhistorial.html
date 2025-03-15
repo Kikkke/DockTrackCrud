@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Médico</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="container mt-4">
+    <h2 class="text-center">Registro Médico</h2>
+
+    <form id="registroForm">
+        <div class="mb-3">
+            <label class="form-label">Seleccionar Paciente:</label>
+            <select class="form-select" id="id_paciente" required></select>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Escolaridad:</label>
+            <select class="form-select" id="escolaridad" required>
+                <option value="Preescolar">Preescolar</option>
+                <option value="Primaria">Primaria</option>
+                <option value="Secundaria">Secundaria</option>
+                <option value="Bachillerato">Bachillerato</option>
+                <option value="Licenciatura">Licenciatura</option>
+                <option value="Maestría">Maestría</option>
+                <option value="Doctorado">Doctorado</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Ocupación:</label>
+            <input type="text" class="form-control" id="ocupacion" required>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Religión:</label>
+            <input type="text" class="form-control" id="religion" required>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Edad:</label>
+            <input type="number" class="form-control" id="edad" required>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Antecedentes Médicos:</label>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="antecedente" value="Cáncer">
+                <label class="form-check-label">Cáncer</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="antecedente" value="Diabetes">
+                <label class="form-check-label">Diabetes</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="antecedente" value="Hipertensión">
+                <label class="form-check-label">Hipertensión</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="antecedente" value="Cardiopatías">
+                <label class="form-check-label">Cardiopatías</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="antecedente" value="Dislipidemias">
+                <label class="form-check-label">Dislipidemias</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="antecedente" value="Nefropatías">
+                <label class="form-check-label">Nefropatías</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="antecedente" value="Enfermedades Mentales">
+                <label class="form-check-label">Enfermedades Mentales</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="antecedente" value="Neurológicos">
+                <label class="form-check-label">Neurológicos</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="antecedente" value="Convulsiones">
+                <label class="form-check-label">Convulsiones</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="antecedente" value="Patología Tiroidea">
+                <label class="form-check-label">Patología Tiroidea</label>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Tipo de Sangre:</label>
+            <select class="form-select" id="tipo_sangre" required>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">¿Fuma?</label>
+            <select class="form-select" id="pfuma" required>
+                <option value="Sí">Sí</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Registrar</button>
+    </form>
+
+    <script src="agregarhistorial.js"></script>
+</body>
+</html>
+

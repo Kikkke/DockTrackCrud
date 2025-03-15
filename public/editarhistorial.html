@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Historial Médico</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="container mt-4">
+    <h2 class="text-center">Editar Historial Médico</h2>
+
+    <form id="editarForm">
+        <div class="mb-3">
+            <label class="form-label">Seleccionar Paciente:</label>
+            <select class="form-select" id="id_paciente" required></select>
+        </div>
+
+        <div id="formulario-historial" style="display: none;">
+            <input type="hidden" id="id_historial">
+            
+            <div class="mb-3">
+                <label class="form-label">Escolaridad:</label>
+                <select class="form-select" id="escolaridad">
+                    <option value="Preescolar">Preescolar</option>
+                    <option value="Primaria">Primaria</option>
+                    <option value="Secundaria">Secundaria</option>
+                    <option value="Bachillerato">Bachillerato</option>
+                    <option value="Licenciatura">Licenciatura</option>
+                    <option value="Maestría">Maestría</option>
+                    <option value="Doctorado">Doctorado</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Ocupación:</label>
+                <input type="text" class="form-control" id="ocupacion">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Religión:</label>
+                <input type="text" class="form-control" id="religion">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Edad:</label>
+                <input type="number" class="form-control" id="edad">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Tipo de Sangre:</label>
+                <select class="form-select" id="tipo_sangre">
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">¿Fuma?</label>
+                <select class="form-select" id="pfuma">
+                    <option value="Sí">Sí</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+        </div>
+    </form>
+
+    <script src="editarhistorial.js"></script>
+</body>
+</html>
